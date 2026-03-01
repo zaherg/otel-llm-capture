@@ -1,0 +1,73 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+build/
+*.js
+*.js.map
+*.d.ts
+
+# Environment and config
+.env
+.env.local
+.env.*.local
+*.config.local.ts
+*.config.local.js
+openclaw.local.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OpenClaw specific
+openclaw.plugin.local.json
+
+# Sensitive data - never commit
+secrets/
+*.key
+*.pem
+*.cert
+*.p12
+*.pfx
+
+# OTel endpoints (may contain sensitive URLs)
+otel-config.local.json
+diagnostics.local.json
+
+# OpenClaw config files that might contain sensitive data
+openclaw.local.json
+openclaw.*.local.json
+
+# Any files containing credentials
+credentials.json
+tokens.json
+secrets.json
+config.local.json
