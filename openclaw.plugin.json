@@ -1,0 +1,23 @@
+{
+  "id": "otel-llm-capture",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": {
+        "type": "boolean"
+      },
+      "includeContent": {
+        "type": "boolean"
+      },
+      "maxContentLength": {
+        "type": "number"
+      },
+      "sampleRate": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      }
+    }
+  }
+}
